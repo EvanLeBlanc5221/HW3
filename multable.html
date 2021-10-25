@@ -1,0 +1,48 @@
+<!--
+File: multable.html
+GUI Assignment: Creating a dynamic table
+Evan LeBlanc, UMass Lowell Computer Science, Evan_LeBlanc@student.uml.edu
+Copyright (c) 2021 by Evan. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by EL on October 23, 2021 at 10:10 PM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="multtable.css">
+        <title>Interactive Dynamic Table</title>
+        
+    </head>
+<body>
+    <h1>Interactive Dynamic Table</h1>
+
+<!--Form created for taking in the information from the user-->
+    <form>
+           <label for="MinCol">Minimum Column Value</label>
+            <input type="number" id="minC" placeholder="Minimum Number">
+
+            <label for="MaxCol">Maximum Column Value</label>
+             <input type="number" id="maxC" placeholder="Maximum Number">
+        
+            <label for="MinRow">Minimum Row Value</label>
+             <input type="number" id="minR" placeholder="Minimum Row">
+        
+            <label for="MaxRow">Maximum Row Value</label>
+             <input type="number" id="maxR" placeholder="Maximum Row">
+        
+            <button type = "button" id ="btn" onclick="usrTable()">Click to submit</button>
+            
+
+    </form>
+
+    <!--span is used for user error, div is used for creating the table-->
+    <span id = "error"></span>
+
+    <div id ="myTable" style="max-width: 250px; max-height: 250px; margin-left: 850px; margin-bottom: 500px; overflow:auto;"></div>
+
+    <script src="multTable.js"></script>
+    
+</body>
+</html>
